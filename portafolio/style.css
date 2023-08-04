@@ -1,0 +1,133 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    background-image: url(img/programación.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .superpadre{
+    height: auto;
+    color: #f0f0f0;
+  }
+  header {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    background-size: cover;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  /* Estilos para proyectos */
+  .proyecto {
+    border: 1px solid #ccc;
+    
+    margin-bottom: 1rem;
+    height: 60vh;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+     .Texto1{
+        border:2px solid red;
+        width: 50%;
+        height: 100%;
+
+     }
+     .Imagen{
+        border:2px solid green;
+        width: 50%;
+        height: 100%;
+
+        background-image: url(img/programación.avif);
+        background-size: cover;
+        background-position: 0%;
+     }
+  
+  .proyecto h3 {
+    font-size: 100%;
+    
+  }
+  
+  .proyecto p {
+    margin: 0.5rem 0;
+  }
+  
+  .proyecto a {
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+  
+  /* Estilos para experiencia laboral */
+  .trabajo h3 {
+    font-size: 1.25rem;
+  }
+  
+  .trabajo p {
+    margin: 0.25rem 0;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #061dcf;
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Estilos adicionales según tu preferencia */
+  
