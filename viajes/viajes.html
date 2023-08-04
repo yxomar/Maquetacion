@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="funciones.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>RutaFeliz</h1>
+       <img src="img/logoviajes.png" alt="logoViajes">
+    </header>
+
+
+<div class="padre">  
+
+    <h1>Bienvenido(a) a tu futura página favorita para viajar<br>
+        en solitario, pareja y amigos!</h1>
+      
+</div>
+    
+    <section>
+        <h2>Lugares destacados de Hoy</h2>
+        <div class="destacados">
+            <div class="tarjeta">
+                <img src="img/puntacana.avif" alt="Lugar1">
+                <h3>Punta Cana</h3>
+                <p>Si eres de los que prefiere explorar hasta el último rincón, Punta Cana es el lugar ideal
+                 para realizar actividades acuáticas como el kayak,
+                 el windsurf y el esnórquel, o simplemente hacer una excursión en barco, ya sea para salir de fiesta,
+                bucear con tiburones o para recorrer la costa de color aguamarina.</p>
+            </div>
+                <div class="tarjeta">
+                    <img src="img/mexicun.avif" alt="Lugar2">
+                    <h3>Cancún</h3>
+                    <p>No importa en qué época del año sea, Cancún siempre estará más que listo para recibirte con los brazos abiertos, como te mereces.
+                    Una de las mejores maneras de salir de las angustias que vienen después de una crisis,
+                    es salir de la multitud para reflexionar, y a la ve dejar que todos tus pensamientos se fluyan con un toque de diversión.
+                     Cancún es uno de los destinos más visitados no sólo en México sino en todo el mundo. 
+                    Recibe más de 15 millones de visitantes al año, y sus instalaciones de clase mundial y su belleza natural hacen que todos los turistas vuelvan al menos dos veces más en promedio a lo largo de su vida.
+                     Para lograr paz mental y volver a la normalidad lo antes posible, aquí tienes las principales razones por las que Cancún debería ser tu destino preferido para rockear el resto del año.</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="img/RicaCosta.avif" alt="Lugar3">
+                    <h3>Costa Rica</h3>
+                    <p>Este país de centroamérica tiene más de lo que podamos imaginar: Hermosos paisajes, volcanes y montañas,
+                        playas que son un paraíso en la tierra y por supuesto sus habitantes,
+                        que con su eslogan “pura vida” enseñan a cualquier visitante a como vivir disfrutando de los placeres de la vida.
+                        Costa Rica es un país que ha tenido claro su rumbo en cuanto al turismo, y se han dedicado con esfuerzo a cuidar sus paisajes</p>
+                </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Contacto</h2>
+        <form action="procesar_formulario.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="origen">Origen:</label>
+            <input type="text" id="origen" name="origen" required>
+
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" name="destino" required>
+
+            <label for="num_personas">Número de personas:</label>
+            <input type="number" id="num_personas" name="num_personas" min="1" required>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <button type="submit" name="solicitar_info">Solicitar Información</button>
+            <button type="submit" name="filtrar">Filtrar</button>
+        </form>
+    </section>
+
+</body>
+</html>
