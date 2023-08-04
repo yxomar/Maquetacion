@@ -1,0 +1,90 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.padre{
+    border: 3px solid rgb(186, 182, 182);
+    height: 30rem;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2%;
+     gap: 1px;
+}
+
+.hijo1{
+    border: 3px solid rgb(110, 186, 110);
+    height: 14%;
+    width: 99%;
+    border-radius: 3px;
+    margin:1px;
+    padding: 5px;
+}
+.hijo2{
+    border: 3px solid pink;
+    height:9%;
+    width: 99%;
+    border-radius: 1%;
+    padding: 7px
+}
+.cajonhijo3-4{
+    height: 21rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 1%;
+    margin: 4px;
+}
+.hijo3{
+    border: 2px solid rgb(104, 164, 197);
+    width: 70%;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1%;
+    padding: 1px;
+}
+.nieto1{
+    border: 2px solid rgb(131, 166, 118);
+    border-radius: 3px;
+    height:12%;
+    margin: 2px;
+    padding: 5px;
+}
+.invisible{
+    height:60%;
+    border-radius: 1%;
+    margin: 4px;
+}
+.nieto2{
+    border: 2px solid rgb(199, 133, 223);
+    height: 15%;
+    border-radius: 1%;
+   padding: 4px;
+}
+.nieto3{
+    border: 2px solid yellow;
+    border-radius: 1%;
+    padding: 0%;
+}
+.hijo4{     
+    border: 2px solid burlywood;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1%;
+    gap: px;
+}
+.nieto4{
+    border: 2px solid rgb(40, 251, 244) ;
+    height:48%;
+    border-radius: 1%;
+    gap: 6px;
+}
+.hijo5{
+    border: 2px solid rgb(225, 224, 133);
+    height: 7%;
+    width: 97%;
+    border-radius: 1%;
+    padding: 4px;
+}
