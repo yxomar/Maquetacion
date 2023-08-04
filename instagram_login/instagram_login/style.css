@@ -1,0 +1,232 @@
+/* Limpiadores: resetean los valores predefinidos de la página*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*-----fuentes-importadas-----*/
+@font-face {
+    font-family: 'SoulBillani';
+    src: url(./fonts/SoulBillani.otf);
+}
+
+/*------------------------------------*/
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, -apple-system, 'system-ui' BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+    .home{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+        gap: 60px;
+    }
+        .home__mobile-img{
+            display: flex;
+        }
+        .home__login{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+            .login{
+                border: 1px solid rgb(219, 219, 219);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                padding: 10px 40px;
+            }
+                .login__h1{
+                    transform: scale(0.7);
+                }
+                .login__form{
+                    font-family: inherit;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                }
+                    .inputs{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                        input{
+                            border: 1px solid rgb(219, 219, 219);
+                            border-radius: 5px;
+                            color: black;
+                            font: inherit;
+                            font-size: 15px;
+                            height: 36px;
+                            width: 260px;
+                            padding-left: 10px;
+                        }
+                        input::placeholder{
+                            color: rgb(115,115,115);
+                            font-size: 13px;
+                            padding-left: 10px;
+                        }
+                    .login__button{
+                        text-align: center;
+                        height: 36px;
+                        width: 260px;
+                        border: none;
+                        border-radius: 5px;
+                        background-color: #4cb5f9;
+                        font-size: 19px;
+                    }
+                        .button__text{
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-weight: bold;
+                            font-size: 14px;
+                            color: white;
+                        }
+                        .login__button:hover{
+                            background-color: #0195f7;
+                        }
+                .login__line{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: inherit;
+                    color: rgb(115,115,115);
+                    font-weight: bold;
+                    font-size: 14px;
+                    padding: 20px;
+                }
+                    .line{
+                        background-color: rgb(219, 219, 219);
+                        height: 1px;
+                        width: 105px;
+                    }
+                .login__facebook{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+                }
+                    .icono{
+                        transform: scale(0.6);
+                    }
+                    .facebook__text{
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: #3b5998;
+                        font-weight: bold;
+                        font-size: 13px;
+                    }
+                .login__forgottenpassword{
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: #3b5998;
+                    font-size: 12px;
+                    padding: 10px;
+                }
+
+
+            .register{
+                border: 1px solid rgb(219, 219, 219);
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                padding: 20px 79px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                text-align: center;
+            }
+                .register__link{
+                    color: #4cb5f9;
+                    font-weight: bold;
+                }
+            .download{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                padding-top: 10px;
+            }
+                .download__buttons{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+                }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        font-size: 13px;
+        gap: 10px;
+    }
+        .footer__links{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+            .footer__link{
+                color: #8D949E;
+                -webkit-text-stroke: 0.02px #606770;
+            }
+            .link__sub:hover{
+                text-decoration: underline blue;
+            }
+        .footer__div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 13px;
+        }
+            .languages{
+                color: #8D949E;
+                -webkit-text-stroke: 0.02px #606770;
+                border: none;
+                background-color: #fafafa;
+            }
+            .copyrigth{
+                color: #8D949E;
+                -webkit-text-stroke: 0.02px #606770;
+            }
+
+
+/*----------Media-Queries---------*/
+@media screen and (max-width: 875px) {
+    .home__mobile-img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .home__login{
+        width: 100%;
+    }
+    .login{
+        border: none;
+    }
+    .register{
+        border: none;
+    }
+}
